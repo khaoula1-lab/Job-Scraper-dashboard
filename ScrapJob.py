@@ -2,13 +2,9 @@ import requests
 from bs4 import BeautifulSoup
 import pymongo
 from pymongo import MongoClient
-from dotenv import load_dotenv
-import os
 import schedule
 import time
-import certifi
 
-load_dotenv()
 client= MongoClient("mongodb://localhost:27017/")
 #On définit la base de données et la collection
 db = client["jobscrapper"]
