@@ -4,8 +4,10 @@ import pymongo
 from pymongo import MongoClient
 import schedule
 import time
-
-client= MongoClient("mongodb://localhost:27017/")
+import os
+import dotenv
+dotenv.load_dotenv()
+client= pymongo.MongoClient(os.getenv("MONGO_URI"))
 #On définit la base de données et la collection
 db = client["jobscrapper"]
 collection = db["offres"]
