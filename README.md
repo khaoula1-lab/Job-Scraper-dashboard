@@ -11,8 +11,7 @@ Application de veille sur les offres d'emploi dans le domaine de la Data au Maro
   - Statistiques en temps réel (nombre d'offres, nombre de villes)
   - Graphique des postes les plus demandés par ville
   - Tableau interactif avec liens cliquables vers les annonces
-  - Thème personnalisé aux couleurs de la marque
-
+    
 ## Stack technique
 
 | Composant | Technologie |
@@ -70,6 +69,3 @@ streamlit run dashboard.py
 
 Le dashboard est ensuite accessible sur `http://localhost:8501`.
 
-## Auteure
-
-**Khaoula Anjroum**
