@@ -44,7 +44,11 @@ def scrap_offers():
                 "ville": ville,
                 "lien" : ur
             }
-            collection.insert_one(offre_data) 
+            collection.update_one(
+                {"lien": ur}, 
+                {"$set": offre_data},
+                upsert=True
+            ) 
 
 def job():
     print("Le Scrapper est en cours d'exécution...")
