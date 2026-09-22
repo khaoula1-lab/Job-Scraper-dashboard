@@ -1,7 +1,13 @@
 # ScrapJob — Dashboard d'offres d'emploi Data
 
 Application de veille sur les offres d'emploi dans le domaine de la Data au Maroc : un scraper collecte automatiquement les annonces publiées sur [rekrute.com](https://www.rekrute.com), les stocke dans MongoDB, et un dashboard Streamlit permet de les explorer visuellement.
-
+## Aperçu
+ 
+![Vue d'ensemble du dashboard](dash1.png)
+ 
+![Filtre par ville et tableau des offres](dash2.png)
+ 
+![Graphique des postes les plus recherchés](diag.png)
 ## Fonctionnalités
 
 - **Scraping automatisé** : récupération des offres (poste, ville, lien) toutes les heures via `requests` + `BeautifulSoup`
